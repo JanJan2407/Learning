@@ -1,0 +1,1 @@
+grid-template-column: repeat(auto-fill, minmax(200px, 1fr)) --> Responsive grid design 

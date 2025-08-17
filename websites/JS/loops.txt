@@ -1,0 +1,10 @@
+1. forEach:
+```js
+const numbers = [65, 44, 12, 4];
+numbers.forEach(myFunction)
+
+function myFunction(item, index, arr) { //Multiply all elements of an array by 10
+  arr[index] = item * 10;               // index and arr are optional
+}
+```
+2. 
