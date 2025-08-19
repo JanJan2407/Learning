@@ -97,3 +97,27 @@ class Student extends Person{
 const person1 = new Student('Jan', 17, 'Harvard');
 person1.sayHi();
 person1.promote();
+
+23. clone an Object
+obj1 = {a:1, b:2};
+obj2 = {...obj1};
+// If object has inner objects use JSON:
+obj3 = JSON.parse(JSON.stringify(obj1)); //Not the best
+
+24. If string has a substring
+string.includes() // Or for an array
+
+25. Add spaces to strings 
+.padEnd .padStart
+
+26. Object.entries('Both keys and values') Object.values() Object.keys()
+
+27. arr.flat(n) // Remove nested loops up to n levels deep default is 1 --> also removes empty entires to an array
+arr = [1, 2, [3, 4]];
+arr.flat() === [1, 2, 3, 4];
+
+28. .trimStart(), .trimEnd() remove all white spaces before and after string
+
+29. .fromEntries [['jan', 17], ['person', 18]] ===> {'jan':17, 'person', 18}
+
+30. try catch -- error is an optional parameter for catch
