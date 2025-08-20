@@ -1,0 +1,11 @@
+git pull -- Sync changes
+git status -- Check which files are changed compared to the one on github
+git add 'file' -- Add a file don't use ''
+git commit -m "Message" -- commit with Message as commit Message
+git push -- Sync changes with online github
+
+Branches
+git branch -- List all branches
+git branch nameOfNewBranch -- Create a new branch
+git checkout branchName -- Go to branchName branch
+git merge main -- Merge your current branch with main to see if there are any conflicts

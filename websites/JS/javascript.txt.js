@@ -121,3 +121,52 @@ arr.flat() === [1, 2, 3, 4];
 29. .fromEntries [['jan', 17], ['person', 18]] ===> {'jan':17, 'person', 18}
 
 30. try catch -- error is an optional parameter for catch
+
+31. for (item of items) // for item in items from python
+
+32. for(item in object) // item is each of the keys from an object
+
+33. type bigint for calculating with very big numbers > 9,000,000,000,000,000 
+
+34. optional chaining operator object?.prop1?.prop2 // Does object have prop1 and then if so does prop1 have object with prop2
+
+35. ?? checks if value is null or undefined
+
+36. string.replaceAll('old', 'new') // Replace all instances of old to new in a string
+
+37. arr.at() // In this at you can also add -1 for last or -2 for second to last ... in normal arr[i] you can't do that
+
+38. arr.findLast() // Find last element (you can give a special instruction like item => item > 15 // Last item that is greater than 15)
+38.1 arr.findLastIndex() // Obvious
+
+39. reverse() // Reverse list and change original
+39.1 toReversed() // Return reversed list but keep the original
+40. // Same as 39 for sort() and toSorted()
+
+41. splice(startIndex, howMany) // Array method removing `howMany` items starting from `startIndex` index
+41.1 toSpliced() // Same as other 2
+
+42. .with(index, toWhat) // Array method to modify an element at index 'index' with toWhat returns new list original is not changed !
+
+43. Object.groupBy(objectList, function) // Group objects based on a function like:
+
+const pokemons = [
+  { name: "bulbasaur", type: "grass"},
+  { name: "blastoise", type: "water"},
+  { name: "charmander",  type: "fire"},
+  { name: "ivysaur", type: "grass"},
+  { name: "charmeleon",  type: "fire"},
+  { name: "charizard",  type: "fire"},
+  { name: "squirtle", type: "water"},
+  { name: "venusaur", type: "grass"},
+  { name: "wartortle", type: "water"},
+  { name: "pikachu", type: "electric"}
+];
+
+Object.groupBy(pokemons, (i) => {
+    return i.type;
+}); 
+
+44. debugger; // To access the debugger in console
+
+45. JS is single threaded (1 call stack)
