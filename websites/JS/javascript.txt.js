@@ -170,3 +170,10 @@ Object.groupBy(pokemons, (i) => {
 44. debugger; // To access the debugger in console
 
 45. JS is single threaded (1 call stack)
+
+46. npm // Node package manager for downloading stuff like:
+- npm init // Create a package.json file with dependencies and optional scripts to run with ǹpn run scriptName`
+- npm install -g name // -g means globally without that package is only installed in that specific folder
+- live-server 
+- browserify // Could be useful
+- lodash // Additional JS functions
