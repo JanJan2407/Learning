@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Basics</title>
+  </head>
+  <body>
+    <div class="js-container"></div>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script> 
+    <script src="https://unpkg.com/supersimpledev/dayjs.js"></script>
+    <script type="text/babel"> // Babel is a JS compiler because we write JSX and it transforms it to JS. To use it import an external library with it and supt type="text/babel" in script  
+      // JSX means JS with HTML
+      const container = document.querySelector('.js-container'); // Select main div and display text inside render to it
+      const root = ReactDOM.createRoot(container)
+      const button = <button>Will this work</button>;
+      const para = <p>This is a p tag</p>;
+      const div = (
+      <div>
+        <button>Hi</button>
+        <p>Text 2 + 2 = {2 + 2}</p>
+      </div>
+      );  
+      setInterval(() => {
+        const time = <p>Current time is {dayjs().format('HH:mm:ss')}</p>;
+        root.render(time);
+      }, 1000)
+    </script>
+  </body>
+</html>
